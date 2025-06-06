@@ -145,11 +145,27 @@ from scipy import stats
 
 ## Files Structure
 ```
-├── QVI_transaction_data.xlsx     # Transaction data
-├── QVI_purchase_behaviour.csv    # Customer data
-├── task1.html                    # Analysis notebook
-└── README.md                     # This file
+├── LICENSE
+│
+├── README.md                     # The top-level README for developers using this project
+│
+├── data/
+│   ├── processed/                # The final, canonical data sets for modeling
+│   └── raw/                      # The original, immutable data dump
+│       ├── QVI_transaction_data.xlsx    # Transaction data
+│       └── QVI_purchase_behaviour.csv   # Customer data
+│
+├── notebooks/                    # Jupyter notebooks for EDA
+│   └── feature_analysis.ipynb    # Main EDA analysis notebook
+│ 
+│
+├── figures/                      # Generated graphics and figures to be used in reporting
+│
+├── img/                          # Project related files
+│
+└── requirements.txt              # The requirements file for reproducing the analysis environment
 ```
+
 
 ## Usage Instructions
 
