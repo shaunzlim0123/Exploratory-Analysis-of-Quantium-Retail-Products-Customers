@@ -4,6 +4,10 @@
 
 This project analyzes customer purchasing behavior for chip products to provide strategic recommendations for category management. The analysis focuses on understanding customer segments and their purchasing patterns to inform commercial strategy.
 
+<div align="center">
+  <img src="img/quantium-logo.png" alt="Quantium Logo" width="300"/>
+</div>
+
 ## Business Context
 
 **Client**: Julia (Category Manager)  
