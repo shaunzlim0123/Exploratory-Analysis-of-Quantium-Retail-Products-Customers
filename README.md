@@ -62,11 +62,15 @@ This project analyzes customer purchasing behavior for chip products to provide 
 
 ## Analysis Framework
 
-This comprehensive analysis was structured around four key analytical approaches to understand customer purchasing behavior in the chips category. The exploratory data analysis phase examined temporal patterns in transaction volumes over time, revealing seasonal trends and identifying key purchasing periods. 
+### Data Quality and Outlier Management
+
+The initial data exploration revealed that while the dataset contained no null values, there was a significant outlier in product quantity where 200 packets of chips were purchased in single transactions. Investigation revealed that these unusual transactions were made by the same customer (loyalty card number 226000) on two separate occasions, both involving Dorito Corn Chip Supreme 380g packages. Further analysis showed this customer had no other transaction history, suggesting commercial rather than retail purchasing behavior. This customer was subsequently removed from the analysis to ensure accurate representation of typical retail customer behavior.
+
+### Temporal and Seasonal Patterns
 
 ![Transactions in December 2018](figures/figure1.png)
 
-The temporal analysis clearly demonstrates the seasonal purchasing patterns, with transaction volumes steadily increasing throughout December 2018, reaching peak levels just before Christmas, followed by a complete drop to zero transactions on Christmas Day itself due to store closures. This pattern validates the importance of seasonal planning and inventory management strategies.
+The temporal analysis clearly demonstrates the seasonal purchasing patterns, with transaction volumes steadily increasing throughout December 2018, reaching peak levels just before Christmas, followed by a complete drop to zero transactions on Christmas Day itself due to store closures. This pattern validates the importance of seasonal planning and inventory management strategies, particularly during peak holiday periods when demand surges.
 
 Product distribution analysis focused on understanding pack size preferences and brand popularity across the customer base, while customer behavior analysis investigated purchase quantities and shopping frequencies to identify distinct behavioral patterns.
 
@@ -74,23 +78,11 @@ Product distribution analysis focused on understanding pack size preferences and
 
 The pack size distribution reveals that the majority of transactions involve medium-sized packages around 170g, with significantly fewer transactions for both smaller and larger pack sizes. This distribution pattern provides crucial insights for product portfolio optimization and shelf space allocation decisions.
 
-The customer segment analysis formed the core of the investigation, examining four critical metrics across all customer segments. Total sales analysis revealed which segments generate the most revenue for the business, while customer count analysis determined the relative size of each segment. Average units per customer provided insights into purchase intensity and shopping behavior, and average price per unit served as an indicator of price sensitivity across different customer groups. This multi-faceted approach enabled a comprehensive understanding of how different customer segments contribute to overall business performance.
-
-Statistical testing was employed to validate observed differences between customer segments, specifically comparing mainstream customers against budget and premium segments regarding their price sensitivity. The analysis revealed a statistically significant difference with a p-value less than 0.05 and a t-statistic of 37.83, confirming that mainstream customers exhibit distinct pricing behavior compared to other segments.
-
-The deep dive analysis focused specifically on the Mainstream Young Singles/Couples segment, which emerged as a key target group. This detailed examination included brand affinity analysis to understand preference patterns, pack size preference analysis to identify optimal product offerings, and the development of commercial insights that translate analytical findings into actionable business recommendations.
-
 ## Key Findings
 
-### Data Quality and Outlier Management
-
-The initial data exploration revealed that while the dataset contained no null values, there was a significant outlier in product quantity where 200 packets of chips were purchased in single transactions. Investigation revealed that these unusual transactions were made by the same customer (loyalty card number 226000) on two separate occasions, both involving Dorito Corn Chip Supreme 380g packages. Further analysis showed this customer had no other transaction history, suggesting commercial rather than retail purchasing behavior. This customer was subsequently removed from the analysis to ensure accurate representation of typical retail customer behavior.
-
-### Temporal and Seasonal Patterns
-
-The analysis revealed distinct seasonal purchasing patterns, with sales increasing significantly in the lead-up to Christmas, followed by zero sales on Christmas Day itself due to store closures. This pattern indicates the importance of seasonal planning and inventory management for the chips category, particularly during peak holiday periods when demand surges.
-
 ### Customer Segment Performance
+
+The customer segment analysis formed the core of the investigation, examining four critical metrics across all customer segments. Total sales analysis revealed which segments generate the most revenue for the business, while customer count analysis determined the relative size of each segment. Average units per customer provided insights into purchase intensity and shopping behavior, and average price per unit served as an indicator of price sensitivity across different customer groups. This multi-faceted approach enabled a comprehensive understanding of how different customer segments contribute to overall business performance.
 
 ![Total Sales by Life Stage and Premium Customer Segment](figures/figure3.png)
 
@@ -109,6 +101,8 @@ Purchase intensity analysis showed that Older Families and Young Families genera
 ![Average Price per Unit by Life Stage and Premium Customer Segment](figures/figure6.png)
 
 Price sensitivity analysis revealed significant behavioral differences across customer segments. The heatmap shows that Mainstream Young Singles/Couples demonstrate the highest willingness to pay premium prices at $4.07 per unit (darkest purple), which represents a statistically significant difference compared to budget and premium customer segments. Mainstream Midage Singles/Couples also show elevated price tolerance at $3.99 per unit. This premium pricing acceptance suggests impulse buying behavior among mainstream customers, particularly younger demographics who may prioritize convenience and brand preferences over price optimization.
+
+In addition, statistical testing was employed to validate observed differences between customer segments, specifically comparing mainstream customers against budget and premium segments regarding their price sensitivity. The analysis revealed a statistically significant difference with a p-value less than 0.05 and a t-statistic of 37.83, confirming that mainstream customers exhibit distinct pricing behavior compared to other segments.
 
 The analysis indicated that mainstream midage and young singles and couples are consistently more willing to pay higher prices per packet compared to their budget and premium counterparts. This counterintuitive finding regarding premium customers may reflect their tendency to purchase healthier snack alternatives, with chip purchases primarily for entertainment purposes rather than regular consumption.
 
