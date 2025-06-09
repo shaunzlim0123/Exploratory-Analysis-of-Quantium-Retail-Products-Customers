@@ -162,6 +162,7 @@ from scipy import stats
 │
 ├── data/
 │   ├── processed/                # The final, canonical data sets for modeling
+│   │   └── QVI_data.csv         # Cleaned and merged transaction + customer data
 │   └── raw/                      # The original, immutable data dump
 │       ├── QVI_transaction_data.xlsx    # Transaction data
 │       └── QVI_purchase_behaviour.csv   # Customer data
