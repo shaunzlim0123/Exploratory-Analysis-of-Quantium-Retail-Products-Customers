@@ -78,8 +78,6 @@ Product distribution analysis focused on understanding pack size preferences and
 
 The pack size distribution reveals that the majority of transactions involve medium-sized packages around 170g, with significantly fewer transactions for both smaller and larger pack sizes. This distribution pattern provides crucial insights for product portfolio optimization and shelf space allocation decisions.
 
-## Key Findings
-
 ### Customer Segment Performance
 
 The customer segment analysis formed the core of the investigation, examining four critical metrics across all customer segments. Total sales analysis revealed which segments generate the most revenue for the business, while customer count analysis determined the relative size of each segment. Average units per customer provided insights into purchase intensity and shopping behavior, and average price per unit served as an indicator of price sensitivity across different customer groups. This multi-faceted approach enabled a comprehensive understanding of how different customer segments contribute to overall business performance.
